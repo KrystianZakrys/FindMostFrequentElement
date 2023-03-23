@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bY9y5pz2arv1tIVfARlnMHzn/s3S0NKwBgUy+unDmnBkiw/CQpgja/gfdnCVCWOWLLECEnbEXbJQ5vRAAcobAQ==",
+  "dgSpecHash": "sP2YNrsTc2UHn3CJz8aT/YbTjVVKPfzIqefM75Xmf18+muacOHW5wIwbTa7of4z9f+MXOxqpa3qEffbHLujopw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kzakrys\\source\\repos\\FindMostFrequent\\FindMostFrequent\\FindMostFrequent.csproj",
+  "projectFilePath": "C:\\Users\\kzakrys\\source\\repos\\FindMostFrequentElement\\FindMostFrequent\\FindMostFrequent.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kzakrys\\.nuget\\packages\\benchmarkdotnet\\0.13.5\\benchmarkdotnet.0.13.5.nupkg.sha512",
     "C:\\Users\\kzakrys\\.nuget\\packages\\benchmarkdotnet.annotations\\0.13.5\\benchmarkdotnet.annotations.0.13.5.nupkg.sha512",

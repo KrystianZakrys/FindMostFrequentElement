@@ -39,7 +39,7 @@ namespace FindMostFrequent
 
                 return null;
             }
-
+            Console.WriteLine($"GetMostFrequentWithLinq ############## Wynik: {result}");
             return result;
         }
 
@@ -72,14 +72,17 @@ namespace FindMostFrequent
             }
 
             if (dict.Any(x => x.Key != mostCounted && x.Value == biggestCount))
-                return null; 
+                return null;
 
+            Console.WriteLine($" GetMostFrequentWithDictionary ############## Wynik: {mostCounted}");
             return mostCounted;
         }
 
         [Benchmark]
         public int? GetMostFrequentWithLinqMixedWithDictionary()
         {
+            int? result = null;
+
             var dict = dataSet.ToLookup(x => x);
 
             if (dict.Count == 0)
@@ -89,14 +92,14 @@ namespace FindMostFrequent
 
             try
             {
-                return dict.Where(x => x.Count() == maxCount).Select(x => x.Key).SingleOrDefault();
+                result =  dict.Where(x => x.Count() == maxCount).Select(x => x.Key).SingleOrDefault();
             }
             catch (Exception)
             {
-
-                return null;
+                result = null;
             }
-
+            Console.WriteLine($"GetMostFrequentWithLinqMixedWithDictionary ############## Wynik: {result}");
+            return result;
         }
 
 

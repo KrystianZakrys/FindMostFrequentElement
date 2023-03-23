@@ -8,8 +8,8 @@ Intel Core i7-10750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
 
 
 ```
-|                                     Method |     Mean |    Error |   StdDev | Rank |     Gen0 |     Gen1 |     Gen2 |  Allocated |
-|------------------------------------------- |---------:|---------:|---------:|-----:|---------:|---------:|---------:|-----------:|
-|              GetMostFrequentWithDictionary | 69.80 ms | 1.358 ms | 1.617 ms |    1 |        - |        - |        - |      988 B |
-| GetMostFrequentWithLinqMixedWithDictionary | 85.91 ms | 1.070 ms | 0.948 ms |    2 | 833.3333 | 666.6667 | 666.6667 | 41949803 B |
-|                    GetMostFrequentWithLinq | 89.49 ms | 1.136 ms | 1.007 ms |    3 | 833.3333 | 666.6667 | 666.6667 | 41950181 B |
+|                                     Method |       Mean |    Error |   StdDev | Rank |       Gen0 |       Gen1 |      Gen2 | Allocated |
+|------------------------------------------- |-----------:|---------:|---------:|-----:|-----------:|-----------:|----------:|----------:|
+|              GetMostFrequentWithDictionary |   740.0 ms | 14.57 ms | 22.24 ms |    1 |  1000.0000 |  1000.0000 | 1000.0000 | 221.01 MB |
+| GetMostFrequentWithLinqMixedWithDictionary | 3,524.5 ms | 61.56 ms | 54.57 ms |    2 | 74000.0000 | 27000.0000 | 4000.0000 | 547.32 MB |
+|                    GetMostFrequentWithLinq | 4,264.3 ms | 70.79 ms | 66.22 ms |    3 | 74000.0000 | 27000.0000 | 4000.0000 | 623.52 MB |

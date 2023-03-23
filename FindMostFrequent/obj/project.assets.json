@@ -1188,11 +1188,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kzakrys\\source\\repos\\FindMostFrequent\\FindMostFrequent\\FindMostFrequent.csproj",
+      "projectUniqueName": "C:\\Users\\kzakrys\\source\\repos\\FindMostFrequentElement\\FindMostFrequent\\FindMostFrequent.csproj",
       "projectName": "FindMostFrequent",
-      "projectPath": "C:\\Users\\kzakrys\\source\\repos\\FindMostFrequent\\FindMostFrequent\\FindMostFrequent.csproj",
+      "projectPath": "C:\\Users\\kzakrys\\source\\repos\\FindMostFrequentElement\\FindMostFrequent\\FindMostFrequent.csproj",
       "packagesPath": "C:\\Users\\kzakrys\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kzakrys\\source\\repos\\FindMostFrequent\\FindMostFrequent\\obj\\",
+      "outputPath": "C:\\Users\\kzakrys\\source\\repos\\FindMostFrequentElement\\FindMostFrequent\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
