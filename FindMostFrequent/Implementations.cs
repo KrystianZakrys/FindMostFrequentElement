@@ -32,14 +32,23 @@ namespace FindMostFrequent
             int? result = null;
             try
             {
-                result = dataSet.GroupBy(x => x).OrderByDescending(x => x.Count()).SingleOrDefault()?.Key;
+                var groups = dataSet.GroupBy(x => x);
+                var maxCount = groups.Max(x => x.Count());
+
+                if(groups.Count(x => x.Count() == maxCount) > 1)
+                {
+                    result = null;
+                }
+                else
+                {
+                    result = groups.FirstOrDefault(x => x.Count() == maxCount)?.Key;
+                }
             }
             catch (Exception)
             {
 
-                return null;
+                result = null;
             }
-            Console.WriteLine($"GetMostFrequentWithLinq ############## Wynik: {result}");
             return result;
         }
 
@@ -74,7 +83,6 @@ namespace FindMostFrequent
             if (dict.Any(x => x.Key != mostCounted && x.Value == biggestCount))
                 return null;
 
-            Console.WriteLine($" GetMostFrequentWithDictionary ############## Wynik: {mostCounted}");
             return mostCounted;
         }
 
@@ -98,7 +106,7 @@ namespace FindMostFrequent
             {
                 result = null;
             }
-            Console.WriteLine($"GetMostFrequentWithLinqMixedWithDictionary ############## Wynik: {result}");
+
             return result;
         }
 
