@@ -21,7 +21,7 @@ namespace FindMostFrequent
 
             for(int i = 0; i < 5000000; i++)
             {
-                dataSet.Add(rnd.Next());
+                dataSet.Add(rnd.Next(10));
             }
         }
 
@@ -87,7 +87,7 @@ namespace FindMostFrequent
         }
 
         [Benchmark]
-        public int? GetMostFrequentWithLinqMixedWithDictionary()
+        public int? GetFromStackoverflow()
         {
             int? result = null;
 
